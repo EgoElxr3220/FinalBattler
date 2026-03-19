@@ -3,13 +3,13 @@ using FinalBattler.Interfaces;
 
 namespace FinalBattler.Character
 {
-    public class Hero : Creations, IHero
+    public class Hero : Creations, IHero, IBattleAction
     {
-        public int Health { get; set; }
-        public int Power { get; set; }
-        public int Luck { get; set; }
-        public int Mana { get; set; }
-        public int ExperienceRemaining { get; set; }
+        public int Health { get; private set; }
+        public int Power { get; private set; }
+        public int Luck { get; private set; }
+        public int Mana { get; private set; }
+        public int ExperienceRemaining { get; private set; }
         public CombatClass CombatClass { get; set; }
         public List<Item> Items { get; set; }
         public List<Skill> Skills { get; set; }
@@ -78,6 +78,27 @@ namespace FinalBattler.Character
             TotalPower += Power;
             TotalLuck += Luck;
             
+        }
+
+        public void Attack()
+        {
+
+        }
+        public void Move()
+        {
+
+        }
+        public void Disengage()
+        {
+
+        }
+        public void Dodge()
+        {
+
+        }
+        public void Hide()
+        {
+
         }
     }
 }

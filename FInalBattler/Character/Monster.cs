@@ -1,6 +1,28 @@
-﻿namespace FinalBattler.Character
+﻿using FinalBattler.Interfaces;
+
+namespace FinalBattler.Character
 {
-    public class Monster : Creations
+    public class Monster : Creations, IBattleAction
     {
+        public void Attack()
+        {
+
+        }
+        public void Move()
+        {
+
+        }
+        public void Disengage()
+        {
+
+        }
+        public void Dodge()
+        {
+
+        }
+        public void Hide()
+        {
+
+        }
     }
 }
