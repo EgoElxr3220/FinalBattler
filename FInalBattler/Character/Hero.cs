@@ -80,7 +80,7 @@ namespace FinalBattler.Character
             
         }
 
-        public void Attack()
+        public void Attack(List<Creations> fighters)
         {
 
         }

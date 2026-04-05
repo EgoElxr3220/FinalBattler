@@ -4,7 +4,7 @@ namespace FinalBattler.Character
 {
     public class Monster : Creations, IBattleAction
     {
-        public void Attack()
+        public void Attack(List<Creations> fighters)
         {
 
         }
